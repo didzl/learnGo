@@ -6,18 +6,11 @@ import "fmt"
 // 	return len(name), strings.ToUpper(name)
 // }
 
-func canIDrink(age int) bool {
-	switch koreanAge :=age+ 2; koreanAge{
-	case 18:
-		return false
-	case 8:
-		return true
-	}
-	return false
-}
-
-
 //start point
 func main() {
-	fmt.Println(canIDrink(16))
+	a:= 2
+	b:= &a // point a's ram
+	a = 5
+	*b = 20 // a = 20(pointer) and see through a
+	fmt.Println(a, b, *b, a)
 }
