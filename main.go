@@ -7,10 +7,13 @@ import "fmt"
 // }
 
 func canIDrink(age int) bool {
-	if koreanAge:= age+2;  koreanAge <18 {
+	switch koreanAge :=age+ 2; koreanAge{
+	case 18:
 		return false
-	} 
-	return true
+	case 8:
+		return true
+	}
+	return false
 }
 
 
