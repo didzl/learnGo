@@ -8,8 +8,8 @@ import "fmt"
 
 //start point
 func main() {
-	//array = need [number]
-	//slice = dont need [number]
+	//array = need [number] according to number
+	//slice = dont need [number] and no limit
 	names := []string{"nico", "han", "bae", "lee"}
 	names = append(names, "choi")
 	fmt.Println(names)
