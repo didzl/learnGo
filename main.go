@@ -8,11 +8,19 @@ import "fmt"
 
 //start point
 func main() {
-	//maps
-	han := map[string]string{"name":"han", "age":"33"}
-	for key, value := range han{
-		fmt.Println(key, value)
-		fmt.Println(value)
-		
-	}
+	//structs
+	favFood := []string{"bulgogi", "galbi"}
+	han:= person{name : "han", age: 33, favFood: favFood}
+	bae:= person{"bae", 33, favFood}
+	fmt.Println(han)
+	fmt.Println(han.favFood)
+	fmt.Println(bae)
+}
+
+// first of all, you define structs
+type person struct {
+	name string
+	age int
+	favFood []string
+
 }
