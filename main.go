@@ -8,9 +8,11 @@ import "fmt"
 
 //start point
 func main() {
-	//array = need [number] according to number
-	//slice = dont need [number] and no limit
-	names := []string{"nico", "han", "bae", "lee"}
-	names = append(names, "choi")
-	fmt.Println(names)
+	//maps
+	han := map[string]string{"name":"han", "age":"33"}
+	for key, value := range han{
+		fmt.Println(key, value)
+		fmt.Println(value)
+		
+	}
 }
